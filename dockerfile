@@ -19,6 +19,16 @@ ENTRYPOINT ["/var/railo/start"]
 
 EXPOSE 8888
 
+##
+# Must see how to structure the project to have locally hosted installers for RAILO
+# The generation of the docker builder can easily become part of the RAILO Build process,
+# so that the images generated from this dockerfile will be aligned with the latest releases.
+##
+
+# check the sintax of ENV and ADD commands 
+# ENV ORACLE_SID XE
+# ENV ORACLE_HOME /u01/app/oracle/product/11.2.0/xe
+# ADD ./files /tmp/filesOracle
 
 
 # docker run -p 127.0.0.1:222:22 -d man aged_image "/usr/sbin/sshd" "/etc/init.d/apache2 start"
